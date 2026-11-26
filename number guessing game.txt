@@ -1,0 +1,18 @@
+import random
+com = random.randint(1,100)
+max = 5
+tri = 0
+while True:
+    tri += 1
+    hum = int(input("please guse the number:- "))
+    if com == hum:
+        print("wow you guse the right number:- ")
+        break
+    elif com > hum:
+        print("you have to think littel bit higher:- ")
+    elif com < hum:
+        print("you have to think littel bit lower:- ")
+    if tri == max:
+        print(f"sorry try again next time:")
+        print(f"The number was:- {com}")
+        break
